@@ -13,7 +13,7 @@
     "build:js": "node node_modules/browserify/bin/cmd.js assets/js/client.js -o ./public/client.min.js",
     "build:uglify": "node node_modules/uglify-js/bin/uglifyjs  public/client.min.js -o public/client.min.js",
     "build": "node_modules/parallelshell/index.js 'npm run build:css' 'npm run build:uglify'",
-    "start": "node index.js"
+    "start": "npm run build && node index.js"
   },
   "author": "Tyrone Michael Avnit <tyronemichael@gmail.com>",
   "license": "ISC",
