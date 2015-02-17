@@ -17,6 +17,12 @@ Builds and compresses the js and css files
 #### `npm start`
 Compresses the css and js files and starts a local server at `http://localhost:5000`
 
+##### Tested on
+
+* Google Chrome
+* iPhone 6 Plus
+* iPad Slim
+
 ##### TODO
 
 * Page must initialise with a loader till all content has been downloaded and only then present user with the site.
