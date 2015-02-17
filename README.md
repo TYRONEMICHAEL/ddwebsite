@@ -2,6 +2,8 @@
 
 A single page website built using node-style modules and browserify to bundle it up and sent it to the client. 
 
+The site is hosted at -> http://shielded-citadel-8274.herokuapp.com/
+
 ### Launching the site
 
 Clone the repo into a foler. The site is built already. Everything needed to deploy is under the public folder so you can either `open the index.html` under the public folder or first run `npm install` and finally start a local server with `npm start`. The site will then available at `http://localhost:5000`.
