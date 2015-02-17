@@ -25,7 +25,6 @@ var app = stampit().enclose(function () {
 	};
 
 	var findLocation = function() {
-		console.log('Hello');
 		GMaps.geolocate({
 		  success: function(position) {
 		    map.setCenter(position.coords.latitude, position.coords.longitude);
@@ -55,10 +54,11 @@ var app = stampit().enclose(function () {
 
 		$('.nav__burger').on('click', this.primaryNav.toggle.bind(this.primaryNav));
 		$('.nav__menu a').on('click', this.primaryNav.toggle.bind(this.primaryNav));
-		$(window).on('scroll', this.animateScroll.animate.bind(this.animateScroll));
 		$('.team__member').on('click', this.carousel.showModal.bind(this.carousel));
 		$('.cd-panel').on('click', this.carousel.hideModal.bind(this.carousel));
 		$('.map-btn').on('click', findLocation);
+		
+		$(window).on('scroll', this.animateScroll.animate.bind(this.animateScroll));
 	};
 
 });
