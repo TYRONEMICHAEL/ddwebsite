@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Method.io</title>
+        <meta name="description" content="A ficticious digitial agency">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+        
+        <!-- PURE CSS GRIDS -->
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+
+        <!-- COMPRESSED STYLES -->
+        <link rel="stylesheet" href="client.min.css">
+        
+        <!-- GOOGLE MAPS -->
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+				
+		<!-- PRIMARY NAVIGRATION -->
+        <nav class="nav">
+        	<div class="nav__burger" data-morph-open="M3,20c0,0,12-4,27-4s27,4,27,4;M3,60c0,0,12,4,27,4s27-4,27-4" data-morph-close="M3,20c0,0,12,4,27,4s27-4,27-4;M3,60c0,0,12-4,27-4s27,4,27,4">
+    			<span class="nav__burger__morph">
+    				<svg width="100%" height="100%" viewBox="0 0 60 80" preserveAspectRatio="none">
+    					<path d="M3,20c0,0,12,0,27,0s27,0,27,0"/>
+    					<line x1="3" y1="40" x2="57" y2="40"/>
+    					<path d="M3,60c0,0,12,0,27,0s27,0,27,0"/>
+    				</svg>
+    			</span>
+    		</div>
+    		<div class="nav__menu" data-morph-open="M260,500H0c0,0,8-120,8-250C8,110,0,0,0,0h260c0,0-8,110-8,250C252,380,260,500,260,500z">
+    			<div class="morph-shape" >
+    				<svg width="100%" height="100%" viewBox="0 0 260 500" preserveAspectRatio="none">
+    					<path fill="none" d="M260,500H0c0,0,0-120,0-250C0,110,0,0,0,0h260c0,0,0,110,0,250C260,380,260,500,260,500z"/>
+    				</svg>
+    			</div>
+    			<ul class="nav__menu__inner">
+    				<li><a href="#about"><i class="icon-heart"></i>About us</a></li>
+    				<li><a href="#team"><i class="icon-star"></i>Our team</a></li>
+    				<li><a href="#"><i class="icon-thumbs-up-alt"></i>What we do?</a></li>
+    				<li><a href="#"><i class="icon-camera"></i>Gallery</a></li>
+    				<li><a href="#"><i class="icon-mail-alt"></i>Contact</a></li>
+    			</ul>
+    		</div>
+        </nav>
+
+        <!-- INTRO PAGE-->
+        <section id="intro" class="intro">
+        	<h1 class="intro__heading ">
+            <span class="intro__heading--small">We are a <i>revolutionary</i></span>
+            Software &amp; Consulting
+            <span class="intro__heading--small"><i>company</i> determined to <i>challenge</i></span>
+            The World
+	        </h1>
+	        <a href="#about" class="arrow bounce"></a>
+        </section>
+        
+        <!-- ABOUT PAGE-->
+        <section id="about" class="about section">
+            <h1 class="about__heading animate-scroll">
+                <span class="intro__heading--small">About <i> the profound </i></span>
+                <span class="about__heading--alt">Deloitte</span> <br/>
+                Digital
+            </h1>
+            <div class="pure-g ">
+                
+                <div class="pure-u pure-u-lg-1-2">
+                    <p class="about__descrip animate-scroll">
+                        <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium eros quis sem ultricies, id efficitur ipsum cursus. In facilisis ante ac lectus porta, at facilisis elit eleifend. Donec cursus tellus dictum, tristique dui eget, elementum augue." - Deloitte Digital </i>
+                    </p>
+                    
+                    <p class="about__descrip animate-scroll">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium eros quis sem ultricies, id efficitur ipsum cursus. In facilisis ante ac lectus porta, at facilisis elit eleifend. Donec cursus tellus dictum, tristique dui eget, elementum augue. Fusce ut laoreet lorem. Duis hendrerit ante vitae laoreet ornare. Vestibulum sed lacus malesuada, lacinia tellus in, volutpat dolor. Duis dignissim, urna in blandit interdum, enim turpis lacinia nibh, in sollicitudin leo neque sed sapien. Nulla facilisi. Donec quis ipsum tellus. Aliquam pellentesque eros ac massa feugiat, vitae ultrices lectus euismod. Duis ex tellus, pulvinar sed accumsan vel, ultrices at enim. Sed finibus odio et odio ultricies dictum eget vitae risus. Nulla dignissim mauris eleifend, lobortis libero vitae, semper lectus.
+                    </p>
+                </div>
+                
+                <div class="pure-u pure-u-lg-1-2">
+                    <p class="about__image animate-scroll">
+                        <img src="images/ipads.jpg" alt="iphone">
+                    </p>
+                </div>
+            </div>
+        </section>
+            
+        <!-- TEAM PAGE-->
+        <section id="team" class="section team animate-scroll">
+
+        <div class="team__carousel animate-scroll"></div>
+            
+            <div class="team__heading animate-scroll">
+                <h1 class="about__heading animate-scroll">
+                    <span class="intro__heading--small">The <i> awesome</i></span>
+                    &amp; Dynamic <br/>
+                    <span class="about__heading--alt">Team</span>
+                </h1>
+            </div>
+        
+            <div class="team__descrip animate-scroll">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium eros quis sem ultricies, id efficitur ipsum cursus. In facilisis ante ac lectus porta, at facilisis elit eleifend. Donec cursus tellus dictum, tristique dui eget, elementum augue. Fusce ut laoreet lorem. Duis hendrerit ante vitae laoreet ornare. Vestibulum sed lacus malesuada, lacinia tellus in, volutpat dolor. Duis dignissim, urna in blandit interdum, enim turpis lacinia nibh, in sollicitudin leo neque sed sapien. Nulla facilisi. Donec quis ipsum tellus. Aliquam pellentesque eros ac massa feugiat, vitae ultrices lectus euismod. Duis ex tellus, pulvinar sed accumsan vel, ultrices at enim. Sed finibus odio et odio ultricies dictum eget vitae risus. Nulla dignissim mauris eleifend, lobortis libero vitae, semper lectus.
+                </p>
+            </div>
+        </section>
+        
+        <!-- WHAT WE DO -->
+        <section id="what-we-do" class="section what-we-do">
+            <div class="pure-g">
+                <div class="pure-u pure-u-lg-1-3 pure-u-md-1-2 animate-scroll">
+                    <figure class="wwd__item">
+                        <figcaption>
+                            <h2>Awesome Work</h2>
+                            <a href="#" class="button-success pure-button">Check out</a>
+                        </figcaption>    
+                        <img src="images/portofolio/01.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="pure-u pure-u-lg-1-3 pure-u-md-1-2 animate-scroll">
+                    <figure class="wwd__item">
+                        <figcaption>
+                            <h2>Awesome Work</h2>
+                            <a href="#" class="button-success pure-button">Check out</a>
+                        </figcaption>    
+                        <img src="images/portofolio/07.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="pure-u pure-u-lg-1-3 pure-u-md-1-2 animate-scroll">
+                    <figure class="wwd__item">
+                        <figcaption>
+                            <h2>Awesome Work</h2>
+                            <a href="#" class="button-success pure-button">Check out</a>
+                        </figcaption>    
+                        <img src="images/portofolio/06.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="pure-u pure-u-lg-1-3 pure-u-md-1-2 animate-scroll">
+                    <figure class="wwd__item">
+                        <figcaption>
+                            <h2>Awesome Work</h2>
+                            <a href="#" class="button-success pure-button">Check out</a>
+                        </figcaption>    
+                        <img src="images/portofolio/02.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="pure-u pure-u-lg-1-3 pure-u-md-1-2 animate-scroll">
+                    <figure class="wwd__item">
+                        <figcaption>
+                            <h2>Awesome Work</h2>
+                            <a href="#" class="button-success pure-button">Check out</a>
+                        </figcaption>    
+                        <img src="images/portofolio/03.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="pure-u pure-u-lg-1-3 pure-u-md-1-2 animate-scroll">
+                    <figure class="wwd__item">
+                        <figcaption>
+                            <h2>Awesome Work</h2>
+                            <a href="#" class="button-success pure-button">Check out</a>
+                        </figcaption>    
+                        <img src="images/portofolio/04.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="pure-u pure-u-lg-1-3 pure-u-md-1-2 animate-scroll">
+                    <figure class="wwd__item">
+                        <figcaption>
+                            <h2>Awesome Work</h2>
+                            <a href="#" class="button-success pure-button">Check out</a>
+                        </figcaption>    
+                        <img src="images/portofolio/05.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="pure-u pure-u-lg-1-3 pure-u-md-1-2 animate-scroll">
+                    <figure class="wwd__item">
+                        <figcaption>
+                            <h2>Awesome Work</h2>
+                            <a href="#" class="button-success pure-button">Check out</a>
+                        </figcaption>    
+                        <img src="images/portofolio/06.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="pure-u pure-u-lg-1-3 pure-u-md-1-2 animate-scroll">
+                    <figure class="wwd__item">
+                        <figcaption>
+                            <h2>Awesome Work</h2>
+                            <a href="#" class="button-success pure-button">Check out</a>
+                        </figcaption>    
+                        <img src="images/portofolio/07.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        
+        <!-- GALLERY PAGE-->
+        <section id="gallery" class="gallery section">
+            <div class="team__heading animate-scroll">
+
+                <h1 class="about__heading gallery__heading animate-scroll">
+                    <span class="intro__heading--small">We Have The<i> best</i></span>
+                    Office Space <br/>
+                    <span class="about__heading--alt">In Cape Town</span>
+                </h1>
+            </div>
+
+            <div class="gallery__descrip animate-scroll">
+                <p>
+                    <i>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium eros quis sem ultricies, id efficitur ipsum cursus. In facilisis ante ac lectus porta, at facilisis elit eleifend. Donec cursus tellus dictum, tristique dui eget, elementum augue. Fusce ut laoreet lorem. Duis hendrerit ante vitae laoreet ornare. Vestibulum sed lacus malesuada, lacinia tellus in, volutpat dolor. Duis dignissim, urna in blandit interdum, enim turpis lacinia nibh, in sollicitudin leo neque sed sapien. Nulla facilisi. Donec quis ipsum tellus. Aliquam pellentesque eros ac massa feugiat, vitae ultrices lectus euismod. Duis ex tellus, pulvinar sed accumsan vel, ultrices at enim. Sed finibus odio et odio ultricies dictum eget vitae risus. Nulla dignissim mauris eleifend, lobortis libero vitae, semper lectus.</i>
+                </p>
+            </div>
+
+            <div class="gallery__slider">
+                <img src="images/gallery/01.jpg" alt="01">
+                <img src="images/gallery/02.jpg" alt="02">
+            </div>
+        </section>
+
+
+
+        <!-- CONTACT PAGE-->
+        <section id="contact" class="contact section">
+            <h1 class="about__heading contact__heading animate-scroll">
+                <span class="intro__heading--small">Get <i> in touch </i></span>
+                With
+                Us
+            </h1>
+            <div class="pure-g ">
+                
+                <div class="pure-u pure-u-lg-1-2">
+                    <p class="about__descrip animate-scroll">
+                        <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium eros quis sem ultricies, id efficitur ipsum cursus. In facilisis ante ac lectus porta, at facilisis elit eleifend. Donec cursus tellus dictum, tristique dui eget, elementum augue." - Deloitte Digital </i>
+                    </p>
+                    <p class="about__descrip animate-scroll">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium eros quis sem ultricies, id efficitur ipsum cursus. In facilisis ante ac lectus porta, at facilisis elit eleifend. Donec cursus tellus dictum, tristique dui eget, elementum augue. Fusce ut laoreet lorem. Duis hendrerit ante vitae laoreet ornare. Vestibulum sed lacus malesuada, lacinia tellus in, volutpat dolor. Duis dignissim, urna in blandit interdum, enim turpis lacinia nibh, in sollicitudin leo neque sed sapien. Nulla facilisi. Donec quis ipsum tellus. Aliquam pellentesque eros ac massa feugiat, vitae ultrices lectus euismod. Duis ex tellus, pulvinar sed accumsan vel, ultrices at enim. Sed finibus odio et odio ultricies dictum eget vitae risus. Nulla dignissim mauris eleifend, lobortis libero vitae, semper lectus.
+
+
+                    </p>
+                    
+                </div>
+                
+                <div class="pure-u pure-u-lg-1-2">
+
+                    <form action="">
+                        <div class="pure-g">
+                            <div class="pure-u">
+
+                                <input type="text" placeholder="Your name" required>
+                            </div>
+                            <div class="pure-u">
+                                <input type="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        
+                        
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <button class="button-success pure-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            
+        </section>
+        
+        <!-- GOOGLE MAPS. -->
+        <section class="section map-container">
+            <button class="button-success pure-button map-btn">Click To Find your location</button>
+            <div id="map"></div>
+        </section>
+        
+        
+
+        <!-- MODAL. -->
+        <div class="cd-panel from-right">
+            <header class="cd-panel-header">
+                <h3></h3>
+                <a href="#0" class="cd-panel-close">Close</a>
+            </header>
+            <div class="cd-panel-container">
+                <div class="cd-panel-content">
+                    <img src="" alt="" class="cd-panel-image">
+                    <p class="cd-panel-descrip"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PUTS OIL IN THE TANK. THIS IS WHERE WE HAVE FUN. -->
+        <script src="client.min.js"></script>
+
+        <!-- OUR LIVEREALOAD SCRIPT -->
+        <script src="//localhost:35729"></script>  
+    </body>
+</html>

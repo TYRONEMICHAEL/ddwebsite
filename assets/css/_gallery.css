@@ -1,0 +1,21 @@
+/* Gallery 
+*************************************/
+.gallery{
+		margin-top: 50px;
+		background-color: var(--cream);
+		padding: 40px;
+	}
+		
+		.gallery__descrip{ text-align: center; }
+		.gallery__descrip i{
+			
+			background-color: #fff;
+		}
+		
+		.gallery__heading {
+			color: #fff;
+		}
+
+		.gallery__slider{
+			margin: 40px 0;
+		}

@@ -1,0 +1,49 @@
+/* Our Team
+	*************************************/
+	.team{ 
+		background-color: var(--blue); 
+		color: #fff;
+	}
+		
+		.team__descrip, .team__heading{
+			text-align: center;
+		}
+
+			.team__descrip p, .team__heading h1 {
+				display: inline-block;
+				max-width: 650px;
+			}
+		
+		.team__carousel{
+			margin: 20px;
+			text-align: center;
+		}
+
+		.team__member{
+			padding: 10px;
+			cursor: pointer;
+		}
+
+			.team__member__pic{
+				margin-bottom: 10px;
+				border-radius: 50%;
+			}
+
+			.team__member__name, .team__member__role{
+				margin: 0;
+			}
+
+	.slick-prev:before, .slick-next:before{
+		color: var(--red);
+	}
+
+		.slick-dots li button:before{
+			color: var(--red);
+			font-size: 32px;
+		}
+
+	@media (--desktop) { 
+		.team__carousel{
+			margin: 20px 50px;
+		}
+	}

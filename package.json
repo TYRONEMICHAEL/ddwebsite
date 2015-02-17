@@ -1,0 +1,37 @@
+{
+  "name": "Method.io",
+  "version": "1.0.0",
+  "description": "A ficticious digital agency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:css": "node node_modules/myth/bin/myth --watch assets/css/client.css public/client.min.css",
+    "watch:js": "node node_modules/watchify/bin/cmd.js assets/js/client.js -o ./public/client.min.js -v",
+    "livereload": "live-reload --port 35729 public/",
+    "dev": "node_modules/parallelshell/index.js 'npm start' 'npm run watch:css' 'npm run livereload' 'npm run watch:js'",
+    "build:css": "node node_modules/myth/bin/myth assets/css/client.css public/client.min.css -c",
+    "build:js": "node node_modules/browserify/bin/cmd.js assets/js/client.js -o ./public/client.min.js",
+    "build:uglify": "node node_modules/uglify-js/bin/uglifyjs  public/client.min.js -o public/client.min.js",
+    "build": "node_modules/parallelshell/index.js 'npm run build:css' 'npm run build:uglify'",
+    "start": "npm run build && node index.js"
+  },
+  "author": "Tyrone Michael Avnit <tyronemichael@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^8.1.3",
+    "express": "^4.11.2",
+    "gmaps": "^0.4.12",
+    "jquery": "^2.1.3",
+    "slick-carousel": "^1.4.1",
+    "snapsvg": "git://github.com/sethvincent/Snap.svg#a34b8af69b",
+    "stampit": "^1.1.0"
+  },
+  "devDependencies": {
+    "live-reload": "^0.2.0",
+    "myth": "^1.3.0",
+    "parallelshell": "^1.0.4",
+    "uglify-js": "^2.4.16",
+    "uglifycss": "0.0.11",
+    "watchify": "^2.3.0"
+  }
+}

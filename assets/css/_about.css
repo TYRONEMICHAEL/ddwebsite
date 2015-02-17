@@ -1,0 +1,42 @@
+	/* About
+	*************************************/
+	.about{ padding-top: 20px; }
+		
+		.about__descrip{
+			max-width: 650px;
+		}
+
+			.about__descrip i{
+				background-color: #eee;
+			}
+
+		.about .intro__heading--small{
+			background-color: #000;
+			color: #fff;
+			text-align: center;
+		}
+
+		.about__heading{
+			font-size: 48px;
+			line-height: 48px;
+			max-width: 450px;
+			margin-bottom: 0;
+		}
+
+			.about__heading--alt{
+				color: var(--red);
+			}
+
+		.about__image{
+			text-align: left;
+			filter: saturate(1);
+		}
+	
+	@media (--desktop) { 
+		
+		.about__descrip { padding-left: 80px; }
+		.about__heading{
+			font-size: 72px;
+			line-height: 72px;
+		}
+	}

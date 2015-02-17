@@ -1,0 +1,49 @@
+/* Intro 
+*************************************/
+
+.intro{
+	position: relative;
+	display: table;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+	.intro__heading{
+		color: #fff;
+		font: 42px/38px 'Abril Fatface', Georgia, serif;
+		font-weight: normal;
+		text-transform: uppercase;
+		text-align: center;
+		max-width: 320px;
+		margin: 100px auto 0 auto;
+		opacity: 0.9;
+		position: fixed;
+		left: 50%;
+		margin-left: -160px;
+	}
+
+	.intro__heading--small{
+		font: 18px/24px 'Playfair Display', Georgia, serif;
+		letter-spacing: .06em;
+		color: var(--red);
+		display: block;
+	}
+		.intro__heading--small i {
+			text-transform: none;
+			letter-spacing: 0;
+		}
+
+@media (--desktop) {
+
+	.intro__heading{
+		font: 75px/68px 'Abril Fatface', Georgia, serif;
+		margin-top: 200px;
+		margin-left: -325px;
+		max-width: 650px;
+	}
+		
+		.intro__heading--small{ font: 30px/32px 'Playfair Display', Georgia, serif; }
+
+}

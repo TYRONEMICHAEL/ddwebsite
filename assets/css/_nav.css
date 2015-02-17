@@ -1,0 +1,165 @@
+/* Navigation 
+*************************************/
+
+.nav{ 
+		position: fixed;
+		top: 0;
+		font: 32px/24px 'Abril Fatface', Georgia, serif;
+		z-index: 3;
+		width: 100%;
+		text-transform: uppercase;
+		letter-spacing: .06em;
+	}
+
+		.nav__burger{
+			position: relative;
+			background: var(--red);
+			width: 50px;
+			height: 50px;
+			left: 50%;
+			top: 0;
+			margin-left: -25px;
+			cursor: pointer;
+			z-index: 2;
+		}
+
+			.nav__burger__morph{
+				position: absolute;
+				top: -30px;
+			}
+
+			.nav__burger__morph svg{
+				width: 100%;
+				height: 100%;
+				padding: 15%;
+			}
+
+				.nav__burger__morph svg path,
+				.nav__burger__morph svg line {
+					stroke: #000;
+					stroke-width: 10px;
+					transition: transform 0.3s;
+				}
+
+				.nav--open .nav__burger__morph svg path:first-of-type {
+					transform: translate3d(0, -8px, 0);
+				}
+
+				.nav--open .nav__burger__morph svg path:nth-of-type(2) {
+					transform: translate3d(0, 8px, 0);
+				}
+
+		.nav__menu {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 0;
+			cursor: pointer;
+			z-index: 1;
+		}
+
+			.nav--open, .nav--open .nav__menu{
+				height: 100%;
+			}
+
+			.nav__menu__inner {
+				list-style: none;
+				padding: 60px 0 0 0;
+				margin: 0;
+				position: absolute;
+				height: 0;
+				width: 100%;
+				text-align: center;
+				transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+			}
+
+			.morph-shape {
+				height: 0;
+				transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+			}
+
+			.nav__menu__inner{
+				height: 0;
+				overflow: hidden;
+			}
+
+				.nav--open .nav__menu__inner {
+					height: 100%;
+				}
+
+				.nav__menu__inner li a {
+					display: block;
+					padding: 10px 0;
+					line-height: 1.2;
+					opacity: 0;
+					color: #000;
+					pointer-events: none;
+					outline: none;
+					text-decoration: none;
+					transform: translate3d(0, -20px, 0);
+					transition: opacity 0.3s, transform 0.3s;
+				}
+
+				.nav__menu__inner li a:hover {
+					color: var(--grey);
+				}
+
+				.nav--open .nav__menu__inner li a {
+					opacity: 1;
+					pointer-events: auto;
+					transform: translate3d(0, 0, 0);
+				}
+
+				.nav--open .nav__menu__inner li:nth-child(2) a {
+					transition-delay: 0.1s;
+				}
+
+				.nav--open .nav__menu__inner li:nth-child(3) a {
+					transition-delay: 0.2s;
+				}
+
+				.nav--open .nav__menu__inner li:nth-child(4) a {
+					transition-delay: 0.3s;
+				}
+
+				.nav--open .nav__menu__inner li:nth-child(5) a {
+					transition-delay: 0.4s;
+				}
+
+				.nav--open .nav__menu__inner li:nth-child(6) a {
+					transition-delay: 0.5s;
+				}
+
+				.morph-shape,
+				.morph-shape svg {
+					position: absolute;
+					width: 100%;
+					top: 0;
+					left: 0;
+				}
+
+				.morph-shape svg {
+					height: 100%;
+				}
+
+				.nav--open .morph-shape {
+					height: 2000px; /* We can't animate height % so this will have to siffice */
+				}
+
+				.morph-shape svg path {
+					fill: var(--red);
+				}
+
+	@media (--desktop) {
+		.nav{
+			font-size: 62px;
+			line-height: 52px;
+		}
+			.nav__menu__inner li a{
+				padding: 5px 0;
+			}
+
+			.nav__burger__morph{
+				top: -60px;
+			}
+	}
