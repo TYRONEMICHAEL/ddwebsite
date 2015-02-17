@@ -88,6 +88,19 @@
 		}
 	}
 
+	.progress{
+		position: fixed;
+		bottom: 20px;
+		width: 70px;
+		height: 70px;
+		background-color: #f46162;
+		color: #fff;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 70px;
+		right: 20px;
+	}
+
 /*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
@@ -101,6 +114,7 @@
 	@import url('_whatWeDo.css');
 	@import url('_gallery.css');
 	@import url('_contact.css');
+
 
 
 

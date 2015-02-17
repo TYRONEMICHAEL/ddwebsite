@@ -1,6 +1,7 @@
 var stampit = require('stampit');
 var $ = window.$ = require('jquery');
 var svgMenu = require('../../lib/svgMenu');
+var appCache = require('../../lib/appCache');
 var animateScroll = require('../../lib/animateScroll');
 var carousel = require('../../lib/carousel');
 var slick = require('slick-carousel');
@@ -9,7 +10,8 @@ var GMaps = require('gmaps');
 var clientState = stampit().state({
 	primaryNav: svgMenu('.nav').create(),
 	animateScroll: animateScroll($('.animate-scroll'), 'animate-scroll__animate').create(),
-	carousel: carousel($('.team__carousel'), require('./data')).create()
+	carousel: carousel($('.team__carousel'), require('./data')).create(),
+	appCache: appCache(window.applicationCache, $('.progress')).create()
 });
 
 var app = stampit().enclose(function () {
@@ -59,6 +61,12 @@ var app = stampit().enclose(function () {
 		$('.map-btn').on('click', findLocation);
 		
 		$(window).on('scroll', this.animateScroll.animate.bind(this.animateScroll));
+
+		// For some reason using jquery you dont get the progress and total values
+		// Must look into this
+		window.applicationCache.addEventListener('progress', this.appCache.progress.bind(this.appCache), false);
+		window.applicationCache.addEventListener('cached', this.appCache.cached.bind(this.appCache), false);
+		window.applicationCache.addEventListener('noupdate', this.appCache.cached.bind(this.appCache), false);
 	};
 
 });
