@@ -28,5 +28,4 @@ Compresses the css and js files and starts a local server at `http://localhost:5
 ##### TODO
 
 * Page must initialise with a loader till all content has been downloaded and only then present user with the site.
-* Must be available to work offline through use off Appcache with indication to user when it is ready to go offline as well as when a new version is available with option to load the new version.
 * Must have appropriate add to home screen preparation for mobile devices
