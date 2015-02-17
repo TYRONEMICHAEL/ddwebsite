@@ -4,7 +4,7 @@ A single page website built using node-style modules and browserify to bundle it
 
 ### Launching the site
 
-The site is built already. Everything needed to deploy is under the public folder so you can either `open the index.html` under the public folder or run using a local server with `npm start` and opening your browser at `http://localhost:5000`.
+Clone the repo into a foler. The site is built already. Everything needed to deploy is under the public folder so you can either `open the index.html` under the public folder or first run `npm install` and finally start a local server with `npm start`. The site will then available at `http://localhost:5000`.
 
 ### The following build commands are  available
 
