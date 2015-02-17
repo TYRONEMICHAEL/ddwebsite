@@ -2,7 +2,7 @@ var util = require('util');
 var express = require("express");
 var cacheManifest = require('connect-cache-manifest');
 var app = express();
-var port = 5000;
+var port = (process.env.PORT || 5000);
 var version = 1;
 
 // cache manifest middleware
